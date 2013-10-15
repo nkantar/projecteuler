@@ -58,5 +58,3 @@ puts "-----"
 puts "Count: " + highest["count"].to_s
 puts "Sum: " + highest["sum"].to_s
 puts "Primes: " + highest["final"].to_s
-
-puts is_prime(2)
