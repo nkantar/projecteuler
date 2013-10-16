@@ -14,13 +14,13 @@ highest = 0
 sum = 0 
 
 while divisors <= minimum:
-    # print "---"
+    print "---"
 
     # generate triangular number to try
     sum += number
 
-    # print "Trying:", sum
-    # print "Number:", number
+    print "Trying:", sum
+    print "Number:", number
 
     # find all its divisors
     # note: incorrect for some (namely small) values
