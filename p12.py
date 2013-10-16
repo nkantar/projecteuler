@@ -48,8 +48,8 @@ while divisors <= minimum:
     if divisors > highest:
         highest = divisors
 
-    # print "Divisors:", divisors
-    # print "Highest:", highest
+    print "Divisors:", divisors
+    print "Highest:", highest
 
     # increment iterator
     number += 1
