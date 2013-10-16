@@ -30,9 +30,9 @@ while divisors <= minimum:
         if sum % divisor == 0:
             divisors += 1
         divisor += 1
-
     divisors *= 2
 
+    # perfect square root check
     if divisors % (divisor - 1) == 0:
         divisors -= 1
     
