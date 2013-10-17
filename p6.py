@@ -5,22 +5,20 @@ import pprint
 import math
 import nik_math
 
-total = 12
-total = 1000
+max = 10
+max = 100
 
-num_max = 5
-num_max = 998 # since a, b, and c must be at least 1 each, and the total is 1000
+sum_of_squares = 0
 
-a = 1
+sum = 0
+square_of_sum = 0
 
-while a <= total - 2:
-    b = 1
-    while b <= total - (a + 1):
-        c = 1
-        while c <= total - (a + b):
-            if a ** 2 + b ** 2 == c ** 2 and a + b + c == total:
-                print a * b * c
-                raise SystemExit, "#winning" # not very Pythonic, I admit
-            c += 1
-        b += 1
-    a += 1
+iterator = 1
+while iterator <= max:
+    sum_of_squares += iterator ** 2
+    sum += iterator
+    iterator += 1
+
+square_of_sum = sum ** 2
+
+print sum_of_squares, square_of_sum, int(math.fabs(sum_of_squares - square_of_sum))
