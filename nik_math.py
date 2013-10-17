@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+import pprint
 import math
 
 def is_prime(number):
@@ -28,3 +29,16 @@ def is_prime(number):
         divisor += 2
 
     return True
+
+def is_palindromic(number):
+
+    # convert to list
+    number = list(str(number))
+    half = len(number) / 2
+    part1 = number[:half]
+    part2 = number[half:]
+    part2.reverse()
+    if not len(number) % 2 == 0:
+        part2 = part2[:-1]
+
+    return part1 == part2
